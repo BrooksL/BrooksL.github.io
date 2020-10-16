@@ -22,10 +22,17 @@
   font-style: normal;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background-color: #fff8f0;
   color: #0a0a0a;
+  font-size: calc(1.6em + 0.5vw)
 }
 
 .nav {
@@ -43,7 +50,7 @@ body {
 
 .nav__link {
   font-family: 'StaatlichesRegular';
-  font-size: 1.2rem;;
+  /* font-size: 1.2rem;; */
   letter-spacing: 2px;
   margin: 1rem 2rem;
   text-decoration: none;
@@ -83,15 +90,12 @@ body {
 
 .hero__header {
   font-family: 'StaatlichesRegular';
-  /* font-size: 8rem; */
   font-size: 12vw;
-  /* margin: 0; */
 }
 
 .hero__caption {
   font-family: 'StaatlichesRegular';
-  /* font-size: 2rem; */
-  font-size: 8vw;
+  font-size: 7vw;
   margin: 1rem;
 }
 
@@ -104,20 +108,24 @@ body {
 }
 
 .letter {
+  display: grid;
+  place-items: center;
   font-family: 'StaatlichesRegular';
   padding: 0rem 1rem;
 }
 
 .letter__h1 {
-  font-size: 8vw;
+  /* font-size: 8vw; */
 }
 
 .letter__h2 {
-  font-size: 7vw;
+  /* font-size: 7vw; */
 }
 
 .letter__p {
-  font-size: 6vw;
+  font-family: 'MontserratRegular';
+  /* font-size: 5vw; */
+  padding: 0rem 1rem;
 }
 
 @media (min-width: 900px) {
@@ -129,24 +137,37 @@ body {
 
   .hero__header {
     font-family: 'StaatlichesRegular';
-    /* font-size: 8rem; */
     font-size: 8vw;
     margin: 0;
   }
 
   .hero__caption {
     font-family: 'StaatlichesRegular';
-    /* font-size: 2rem; */
     font-size: 2.2vw;
-    /* margin: 0; */
   }
 
   .nav__link {
     margin: 1rem 8rem;
   }
-}
 
-.letter {
-  display: grid;
-  place-items: center;
+  .letter {
+    display: grid;
+    place-items: center;
+    font-family: 'StaatlichesRegular';
+    padding: 0rem 1rem;
+  }
+  
+  .letter__h1 {
+    font-size: 4vw;
+  }
+  
+  .letter__h2 {
+    font-size: 3vw;
+  }
+  
+  .letter__p {
+    font-family: 'MontserratRegular';
+    font-size: 1.6vw;
+    width: 60%;
+  }
 }
