@@ -99,6 +99,10 @@ body {
   margin: 1rem;
 }
 
+.centertext {
+  text-align: center;
+}
+
 .rounded {
   height: 0.5rem;
   width: 80%;
