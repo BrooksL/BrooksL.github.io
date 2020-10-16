@@ -133,14 +133,10 @@ img {
   padding: 0rem 1rem;
 }
 
-.letter__sig {
-  tex
-}
-
 .footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 
 .footer__p {
