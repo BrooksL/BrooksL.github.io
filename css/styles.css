@@ -90,12 +90,12 @@ body {
 
 .hero__header {
   font-family: 'StaatlichesRegular';
-  font-size: 12vw;
+  /* font-size: 12vw; */
 }
 
 .hero__caption {
   font-family: 'StaatlichesRegular';
-  font-size: 7vw;
+  /* font-size: 7vw; */
   margin: 1rem;
 }
 
@@ -124,8 +124,15 @@ body {
 
 .letter__p {
   font-family: 'MontserratRegular';
-  /* font-size: 5vw; */
+  font-size: 5vw;
   padding: 0rem 1rem;
+}
+
+@media (min-width: 450px) {
+  .letter__p {
+    font-size: 3.5vw;
+    width: 90%;
+  }
 }
 
 @media (min-width: 900px) {
@@ -158,16 +165,16 @@ body {
   }
   
   .letter__h1 {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   
   .letter__h2 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
   
   .letter__p {
     font-family: 'MontserratRegular';
-    font-size: 1.6vw;
+    font-size: 1.4vw;
     width: 60%;
   }
 }
