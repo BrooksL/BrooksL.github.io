@@ -200,4 +200,9 @@ img {
     font-size: 1.4vw;
     width: 60%;
   }
+
+  .tenor-gif-embed {
+    width: 100%;
+    max-width: 450px;
+  }
 }
